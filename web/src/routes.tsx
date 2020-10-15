@@ -6,7 +6,9 @@ import Landing from './pages/Landing'
 function Routes() {
     return (
         <BrowserRouter>
-            <Route path="/" exact component={Landing}/>
+            <Switch>
+                <Route path="/" exact component={Landing}/>
+            </Switch>
         </BrowserRouter>
     )
 }
